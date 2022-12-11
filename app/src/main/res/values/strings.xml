@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">MyResume</string>
+    <string name="sign_in_title">Welcome to MyResume</string>
+    <string name="sign_in">Sign In</string>
+    <string name="email">Email address (required)</string>
+    <string name="password">Password (required)</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_about">About</string>
+    <string name="title_experience">Experience</string>
+    <string name="title_contact">Contact</string>
+
+    <string name="my_name">Tushig Battumur</string>
+    <string name="my_bio">Back-End Software Developer @eBay</string>
+    <string name="my_desc">Experienced full-stack software engineer experienced in crafting
+        sophisticated enterprise systems applying development and operational skills to work
+    </string>
+
+    <string name="about_me">About Me</string>
+    <string name="about">Experienced full-stack software engineer with 4 years of hands-on experience crafting
+        sophisticated enterprise systems applying development and operational skills to work. Experienced in back-end
+        engineering, software development, implementation, and streamlining architecture design. Successfully deployed
+        microservice architecture systems and migration from monolith to microservices. Proficient team leader who
+        manages projects through all software development life cycle phases. Proven ability to write efficient and
+        reusable code, and strong collaborative skills.
+    </string>
+
+    <string name="education">Education</string>
+    <string name="miu">Maharishi International University</string>
+    <string name="master">Master of Computer Science</string>
+    <string name="must">Mongolian University of Science and Technology</string>
+    <string name="bachelor">Bachelor of Computer Science</string>
+
+</resources>
