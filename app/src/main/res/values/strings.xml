@@ -31,4 +31,11 @@
     <string name="must">Mongolian University of Science and Technology</string>
     <string name="bachelor">Bachelor of Computer Science</string>
 
+    <string name="software_engineer">Software Engineer</string>
+    <string name="fullstack">#full-stack</string>
+
+    <string name="exp">Experience</string>
+    <string name="ebay">eBay</string>
+    <string name="golomt">Golomt Bank of Mongolia</string>
+
 </resources>
