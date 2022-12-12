@@ -1,13 +1,17 @@
 package com.example.myresume.ui.contact
 
+import android.R
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
+import android.webkit.WebSettings
+import android.webkit.WebView
+import android.webkit.WebViewClient
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import com.example.myresume.databinding.FragmentContactBinding
+import kotlinx.android.synthetic.main.fragment_contact.*
+
 
 class ContactFragment : Fragment() {
 
@@ -22,17 +26,28 @@ class ContactFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val dashboardViewModel =
-            ViewModelProvider(this).get(ContactViewModel::class.java)
-
         _binding = FragmentContactBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textDashboard
-        dashboardViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
         return root
+    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        val myWebView: WebView = binding.webView
+        myWebView.webViewClient = object : WebViewClient() {
+            override fun shouldOverrideUrlLoading(
+                view: WebView,
+                url: String
+            ): Boolean {
+                view.loadUrl(url)
+                return true
+            }
+        }
+
+        myWebView.loadUrl("https://www.tushigb.me/");
+        myWebView.settings.javaScriptEnabled = true
+        myWebView.settings.allowContentAccess = true
+        myWebView.settings.domStorageEnabled = true
+        myWebView.settings.useWideViewPort = true
     }
 
     override fun onDestroyView() {
